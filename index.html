@@ -22,14 +22,14 @@
       
       <p id="candidates"></p>
       <script>
-      var applicants = {ID:"1", Firstname:"Berty", Lastname:"Black"};
-                    #   {ID:"2", Firstname:"Charlie", Lastname:"Chapman"}; 
-                    #   {ID:"3", Firstname:"Amber", Lastname:"Cleveland"};
-                    #   {ID:"4", Firstname:"Mandy", Lastname:"White"};
-                    #   {ID:"5", Firstname:"Neil", Lastname:"Green"};
+      var applicants[4] = {ID:"1", Firstname:"Berty", Lastname:"Black"};
+                       {ID:"2", Firstname:"Charlie", Lastname:"Chapman"}; 
+                       {ID:"3", Firstname:"Amber", Lastname:"Cleveland"};
+                       {ID:"4", Firstname:"Mandy", Lastname:"White"};
+                       {ID:"5", Firstname:"Neil", Lastname:"Green"};
                        
    
-      document.getElementById("candidates").innerHTML = applicants("ID", "Firstname", "Lastname");
+      document.getElementById("candidates").innerHTML = applicants("ID[]", "Firstname[]", "Lastname[]");
       </script>
       
       
