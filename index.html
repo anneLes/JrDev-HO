@@ -20,7 +20,7 @@
 
     <section class="main-content">
       
-      <p id="candidates"></p>
+    /*  <p id="candidates"></p>
       <script>
       var applicants = new Array ("1", "Berty", "Black");
                        ("2", "Charlie", "Chapman"); 
@@ -31,34 +31,55 @@
    
       document.getElementById("candidates").innerHTML = applicants;
       </script>
+      */
+      
       
       <table style="width:100%">
-  <tr>
-    <th>ID</th>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>001</td>
-    <td>Berty</td>
-    <td>Black</td>
-  </tr>
-  <tr>
-    <td>002</td>
-    <td>Charlie</td>
-    <td>Chapman</td>
-  </tr>
-  <tr>
-    <td>003</td>
-    <td>Amber</td>
-    <td>Cleveland</td>
-  </tr>
-  <tr>
-    <td>004</td>
-    <td>Mandy</td>
-    <td>White</td>
-  </tr>
-</table>
+         <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+         </tr>
+         <tr>
+            <td>001</td>
+            <td>Berty</td>
+            <td>Black</td>
+         </tr>
+         <tr>
+            <td>002</td>
+            <td>Charlie</td>
+            <td>Chapman</td>
+         </tr>
+         <tr>
+            <td>003</td>
+            <td>Amber</td>
+            <td>Cleveland</td>
+         </tr>
+         <tr>
+            <td><button onclick="myFunction()">004</button></td>
+            <td>Mandy</td>
+            <td>White</td>
+         </tr>
+      </table>
+      
+      
+      
+      
+      
+
+<p id="004"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("004").innerHTML = "Work Experience of Mandy White";
+}
+</script>
+
+      
+      
+      
+      
+      
       
       
       
