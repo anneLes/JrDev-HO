@@ -20,10 +20,16 @@
 
     <section class="main-content">
       
-      <p id="demo"></p>
+      <p id="candidates"></p>
       <script>
-      var applicants = ["Berty", "Charlie", "Amber", "Mandy", "Neil"];
-      document.getElementById("demo").innerHTML = applicants.toString();
+      var applicants = {ID:"1", Firstname:"Berty", Lastname:"Black"};
+                       {ID:"2", Firstname:"Charlie", Lastname:"Chapman"};
+                       {ID:"3", Firstname:"Amber", Lastname:"Cleveland"};
+                       {ID:"4", Firstname:"Mandy", Lastname:"White"};
+                       {ID:"5", Firstname:"Neil", Lastname:"Green"};
+                       
+   
+      document.getElementById("candidates").innerHTML = applicants.toString();
       </script>
       
       
