@@ -41,17 +41,17 @@
             <th>Lastname</th>
          </tr>
          <tr>
-            <td>001</td>
+            <td><button onclick="myFunction()">001</button></td>
             <td>Berty</td>
             <td>Black</td>
          </tr>
          <tr>
-            <td>002</td>
+            <td><button onclick="myFunction()">002</button></td>
             <td>Charlie</td>
             <td>Chapman</td>
          </tr>
          <tr>
-            <td>003</td>
+            <td><button onclick="myFunction()">003</button></td>
             <td>Amber</td>
             <td>Cleveland</td>
          </tr>
@@ -66,12 +66,17 @@
       
       
       
-
+<p id="001"></p>
+<p id="002"></p>
+<p id="003"></p>
 <p id="004"></p>
 
 <script>
 function myFunction() {
-    document.getElementById("004").innerHTML = "Work Experience of Mandy White";
+  document.getElementById("001").innerHTML = "Work Experience of Berty Black";
+  document.getElementById("002").innerHTML = "Work Experience of Charlie Chapman";
+  document.getElementById("003").innerHTML = "Work Experience of Amber Cleveland";
+  document.getElementById("004").innerHTML = "Work Experience of Mandy White";
 }
 </script>
 
