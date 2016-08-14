@@ -13,7 +13,7 @@
 
  <body>
    
-<a href="result_page.jsp"></a>
+<a href="result_page.jsp">Continue</a>
 
  
 </body>
