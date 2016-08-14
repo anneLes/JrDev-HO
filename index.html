@@ -71,10 +71,10 @@
             
            
            
-           function startRead() {
+           function myFunction() {
   // obtain input element through DOM
 
-  var file = document.getElementById('file').files[0];
+  var file = document.getElementById('search');
   if(file){
     getAsText(file);
   }
@@ -87,19 +87,20 @@ function getAsText(readFile) {
   // Read file into memory as UTF-16
   reader.readAsText(readFile, "UTF-16");
 
-  // Handle progress, success, and errors
-  reader.onprogress = updateProgress;
-  reader.onload = loaded;
-  reader.onerror = errorHandler;
+  
 }
            
            
-           
+     function loaded(evt) {
+  // Obtain the read file data
+  var fileString = evt.target.result;
+  
+}      
            
            
            
             
-          }
+          
         </script>
   
         
