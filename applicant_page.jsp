@@ -11,7 +11,7 @@
 
  <body>
    
-<a href="ResultPage.jsp">Continue</a>
+<a href="result_page.jsp"></a>
 
  
 </body>
