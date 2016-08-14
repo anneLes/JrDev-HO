@@ -59,16 +59,21 @@
     
     <body>
       
+      <p id="001"></p>
+      <p id="002"></p>
+      <p id="003"></p>
+      <p id="004"></p>
       
       <div class="right">
         <input type="text" id="search" placeholder="Enter name or number...."/> 
         <button onclick="myFunction()">Search</button>
-        <p id="demo"></p>
+        
         
         <script>
           function myFunction() {
             var x = document.getElementById("search").placeholder;
-            document.getElementById("demo").a href = x;
+            document.getElementById("search").placeholder.innerHTML = x;
+            return x;
           }
         </script>
         
@@ -116,10 +121,7 @@
       
       
       
-<p id="001"></p>
-<p id="002"></p>
-<p id="003"></p>
-<p id="004"></p>
+
 
 <script>
 function myFunction1() {
