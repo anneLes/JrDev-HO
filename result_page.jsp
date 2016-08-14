@@ -6,9 +6,9 @@
 
  <body>
    
-    <% file = session.getAttribute("theName") %>
+    <% = session.getAttribute("theName") %>
 
- <a href=file".doc" target="_blank"></a>
+ 
  
 </body>
 
