@@ -6,7 +6,7 @@
 
  <body>
    
-    <% = session.getAttribute("theName") %>
+    <% = session.getAttribute("theName".doc) %>
 
  
 </body>
