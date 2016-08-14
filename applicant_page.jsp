@@ -1,6 +1,6 @@
 
 <%
-   String name = request.getParameter("search");
+   String name = request.getParameter("x");
 
    session.setAttribute("theName", name); 
 %>
