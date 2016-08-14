@@ -62,12 +62,48 @@
         <input type="text" id="search" placeholder="Enter name or number...."/> 
         <input type="submit" value="SEARCH"/>
         
+        
+        <button onclick="myFunction()">Search</button>
+        
+        
+        <script>
+          function myFunction() {
+            var x = document.getElementById("search");
+            document.getElementById("search").innerHTML = x;
+            
+            
+            
+          }
+        </script>
+        
+        
+        
+        
 
       </div>
   </form>
 
 
-  <a href="result_page.jsp"></a>
+  
+  
+  
+  var txtFile = x
+var file = new File(txtFile);
+
+file.open("r"); // open file with read access
+var str = "";
+while (!file.eof) {
+	// read each line of text
+	str += file.readln() + "\n";
+}
+file.close();
+alert(str);
+
+  
+  
+  
+  
+  
   
   
   
