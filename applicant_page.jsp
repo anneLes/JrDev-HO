@@ -2,7 +2,7 @@
 <%
    String name = request.getParameter("x");
    
-   System.out.println(x);
+   
 
    session.setAttribute("theName", name); 
 %>
