@@ -61,17 +61,42 @@
       <div class="right">
         <input type="text" id="search" placeholder="Enter name or number...."/> 
         
-        
-        
-        
         <button onclick="myFunction()">Search</button>
         
         
         <script>
-          function myFunction() {
-            var x = document.getElementById("search");
-            document.getElementById("search").innerHTML = <a href="x"</a>;
+        //  function myFunction() {
+       //     var x = document.getElementById("search");
+        //    document.getElementById("search").innerHTML = <a href="search"</a>;
             
+           
+           
+           function startRead() {
+  // obtain input element through DOM
+
+  var file = document.getElementById('search').files[0];
+  if(file){
+    getAsText(file);
+  }
+}
+
+function getAsText(readFile) {
+
+  var reader = new FileReader();
+
+  // Read file into memory as UTF-16
+  reader.readAsText(readFile, "UTF-16");
+
+  // Handle progress, success, and errors
+  reader.onprogress = updateProgress;
+  reader.onload = loaded;
+  reader.onerror = errorHandler;
+}
+           
+           
+           
+           
+           
            
             
           }
