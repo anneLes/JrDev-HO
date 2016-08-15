@@ -53,8 +53,8 @@
     <body>
       
       
-      <p>Click the button to display a string as a hyperlink.</p>
-
+      
+<input type="text" id="textInput" placeholder="Enter name or number...."/> 
 <button onclick="myFunction()">Search</button>
 
 <p id="demo"></p>
@@ -62,9 +62,9 @@
 <script>
 function myFunction() {
     
-    <a href="BertyBlack.doc" target="_blank">Berty Black</a>
-  //  var result = str.link("http://www.w3schools.com");
- //   document.getElementById("demo").innerHTML = result;
+     var str = document.getElementById("textInput");
+    var result = str.link("http://www.w3schools.com");
+   document.getElementById("demo").innerHTML = result;
 }
 </script>
       
