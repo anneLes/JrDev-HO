@@ -52,7 +52,7 @@
     
     <body>
       
-      <input type='file' accept='doc/*' onchange='openFile(event)'><br>
+      <input type='file' accept='text/plain' onchange='openFile(event)'><br>
 <img id='output'>
 <script>
   var openFile = function(event) {
@@ -60,13 +60,13 @@
 
     var reader = new FileReader();
     reader.onload = function(){
-      var dataURL = reader.result;
-      var output = document.getElementById('output');
-      output.src = dataURL;
+      var text = reader.result;
+      console.log(reader.result.substring(0, 200));
     };
-    reader.readAsDataURL(input.files[0]);
+    reader.readAsText(input.files[0]);
   };
 </script>
+
 
       
       
