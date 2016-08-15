@@ -52,20 +52,7 @@
     
     <body>
       
-      <input type='file' accept='text/plain' onchange='openFile(event)'><br>
-<img id='output'>
-<script>
-  var openFile = function(event) {
-    var input = event.target;
-
-    var reader = new FileReader();
-    reader.onload = function(){
-      var text = reader.result;
-      console.log(reader.result.substring(0, 200));
-    };
-    reader.readAsText(input.files[0]);
-  };
-</script>
+      
 
 
       
@@ -80,6 +67,25 @@
       
   
       <div class="right">
+        
+        <input type='file' accept='text/plain' onchange='openFile(event)'><br>
+<img id='output'>
+<script>
+  var openFile = function(event) {
+    var input = event.target;
+
+    var reader = new FileReader();
+    reader.onload = function(){
+      var text = reader.result;
+      console.log(reader.result.substring(0, 200));
+    };
+    reader.readAsText(input.files[0]);
+  };
+</script>
+        
+        
+        
+        
         
         <input type="text" id="textInput" placeholder="Enter name or number...."/> 
       
@@ -106,22 +112,6 @@
 
 
 
-<script>
-window.onload = function() {
-    var textInput = document.getElementById('textInput');
-    
-    var fileDisplayArea = document.getElementById('fileDisplayArea');
-    fileInput.addEventListener('change', function(e) {
-});
-}
-var file = x;
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    fileDisplayArea.innerText = reader.result;
-  }
-  reader.readAsText(file);  
-  
-</script>
 
 
 
