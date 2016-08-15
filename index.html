@@ -63,38 +63,63 @@
       
         <input type="button" onclick="myFunction()" value="Search"/>
        
-       
+      
         
       <script type="text/javascript">  
         
         
         
-        function myFunction() {
-            
-    
-            
-         
-            var x = document.getElementById("mySearch").placeholder;
-            document.getElementById("demo").innerHTML = x;
-            
-            if (x == "Berty Black" || x=="001"){   
-               document.write("Berty Black");  
-            }
-         
-            else if( x == "Charlie Chapman" || x=="002"){
-               document.write("<b>Charlie Chapman</b>");
-            }
-         
-            else if( x == "Amanda Green" || x=="003" ){
-               document.write("<b>Amanda Green</b>");
-            }
-         
-            else{
-               document.write("<b>Mandy White</b>");
-            }
-         
-      
         
+</script>
+
+
+<div>
+      
+      <input type="file" id="fileInput">
+    </div>
+    <pre id="fileDisplayArea"></pre>
+
+  </div>
+
+
+<script>
+window.onload = function() {
+    var fileInput = document.getElementById('fileInput');
+    var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+    fileInput.addEventListener('change', function(e) {
+      // Put the rest of the demo code here.
+    });
+}
+
+
+
+
+
+var file = fileInput.files[0];
+
+
+
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    fileDisplayArea.innerText = reader.result;
+  }
+
+  reader.readAsText(file);  
+
+
+
+</script>
+
+
+
+
+
+         
+            
+            
+            
   
   
         }
