@@ -63,7 +63,8 @@
 function myFunction() {
     
      var str = document.getElementById("textInput");
-    var result = str.link("http://www.w3schools.com");
+     var name = str.value;
+    var result = name.link("http://www.w3schools.com");
    document.getElementById("demo").innerHTML = result;
 }
 </script>
