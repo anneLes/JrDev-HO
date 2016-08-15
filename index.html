@@ -68,18 +68,22 @@
       <script type="text/javascript">  
         
         
-        
+        function myFunction() {
+            
+    
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+            var text = reader.result;
+          }
+
+           reader.readAsText(file, encoding);
+
+
         
 </script>
 
 
-<div>
-      
-   
-    
-    <pre id="fileDisplayArea"></pre>
-
-  </div>
 
 
 <script>
