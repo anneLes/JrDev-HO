@@ -59,7 +59,7 @@
   
       <div class="right">
         
-        <input type="text" Id="mySearch" placeholder="Enter name or number...."/> 
+        <input type="text" id="mySearch" placeholder="Enter name or number...."/> 
       
         <input type="button" onclick="myFunction()" value="Search"/>
        
@@ -75,8 +75,8 @@
 
 <div>
       
-      <input type="file" id="fileInput">
-    </div>
+   
+    
     <pre id="fileDisplayArea"></pre>
 
   </div>
@@ -84,10 +84,10 @@
 
 <script>
 window.onload = function() {
-    var fileInput = document.getElementById('fileInput');
+    var text = document.getElementById('mySearch');
     var fileDisplayArea = document.getElementById('fileDisplayArea');
 
-    fileInput.addEventListener('change', function(e) {
+    text.addEventListener('change', function(e) {
       // Put the rest of the demo code here.
     });
 }
