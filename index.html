@@ -56,13 +56,13 @@
       <div class="right">
         
         
-        <input type='file' onchange='openFile(event)'>
+        <input type='file' onchange='onFilePicked(event)'>
 <script>
-  var openFile = function(event) {
+  var onFilePicked = function(event) {
     var input = event.target;
 
     var file = input.files[0];
-    console.log(file.lastModifiedDate);
+    console.log(file.name);
   };
 </script>
 
