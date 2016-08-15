@@ -31,17 +31,14 @@
     a:link {
        color: black;
     }
-
     /* visited link */
     a:visited {
        color: maroon;
     }
-
     /* mouse over link */
     a:hover {
        color: blue;
     }
-
    
    
    .right {
@@ -49,7 +46,6 @@
     right: 30px;
     
    }
-
     </style>
     
     
@@ -59,54 +55,46 @@
   
       <div class="right">
         
-        Select a candidate's file:
-        
-        <input type="file" id="fileInput"/> 
+        <input type="text" id="textInput" placeholder="Enter name or number...."/> 
       
-        
+        <input type="button" onclick="myFunction()" value="Search"/>
        
         <pre id="fileDisplayArea"></pre>
        
       </div>
         
         
-      
+      <script type="text/javascript">  
+        
+        
+        function myFunction() {
+            var x = document.getElementById("mySearch");
+    
+            
+          }
+           reader.readAsText(text, encoding);
+}
+        
+</script>
 
 
 
 
 <script>
 window.onload = function() {
-    var fileInput = document.getElementById('fileInput');
+    var textInput = document.getElementById('textInput');
     
     var fileDisplayArea = document.getElementById('fileDisplayArea');
-
     fileInput.addEventListener('change', function(e) {
 });
 }
-
-
-
-
-
+var file = x;
   var reader = new FileReader();
-
   reader.onload = function(e) {
     fileDisplayArea.innerText = reader.result;
   }
-
   reader.readAsText(file);  
-
-
-
-
-
-
-
   
-
-
-
 </script>
 
 
@@ -156,4 +144,3 @@ window.onload = function() {
 
   </body>
 </html>
-
