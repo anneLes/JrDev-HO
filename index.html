@@ -59,37 +59,25 @@
   
       <div class="right">
         
-        <input type="text" id="textInput" placeholder="Enter name or number...."/> 
+        Select a candidate's file:
+        
+        <input type="file" id="fileInput"/> 
       
-        <input type="button" onclick="myFunction()" value="Search"/>
+        
        
         <pre id="fileDisplayArea"></pre>
        
       </div>
         
         
-      <script type="text/javascript">  
-        
-        
-        function myFunction() {
-            var x = document.getElementById("mySearch");
-
-    
-            
-          }
-
-           reader.readAsText(text, encoding);
-
-}
-        
-</script>
+      
 
 
 
 
 <script>
 window.onload = function() {
-    var textInput = document.getElementById('textInput');
+    var fileInput = document.getElementById('fileInput');
     
     var fileDisplayArea = document.getElementById('fileDisplayArea');
 
@@ -97,7 +85,7 @@ window.onload = function() {
 });
 }
 
-var file = x;
+
 
 
 
